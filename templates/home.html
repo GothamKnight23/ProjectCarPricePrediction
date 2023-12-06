@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deployment Model</title>
+</head>
+<body>
+    <h1>Car Price Prediciton</h1>
+        <form action="{{ url_for('predict')}}" method="POST">
+            <b> Company : <input type="text" name="Company", placeholder="enter 1"><br><br>
+                Car Body : <input type="text" name="Car Body", placeholder="enter 2"><br><br>
+                Wheelbase : <input type="text" name="Wheelbase", placeholder="enter 3"><br><br>
+                Car Length : <input type="text" name="Car Length", placeholder="enter 4"><br><br>
+                Car Width : <input type="text" name="Car Width", placeholder="enter 5"><br><br>
+                Car Height : <input type="text" name="Car Height", placeholder="enter 6"><br><br>
+                Curb Weight : <input type="text" name="Curb Weight", placeholder="enter 7"><br><br>
+                Engine Size : <input type="text" name="Engine Size", placeholder="enter 8"><br><br>
+                Horsepower : <input type="text" name="Bore Ratio", placeholder="enter 9"><br><br>
+                Bore Ration : <input type="text" name="Stroke", placeholder="enter 10"><br><br>
+                Stroke : <input type="text" name="Compression Ratio", placeholder="enter 11"><br><br>
+                Compression Ratio : <input type="text" name="Horse Power", placeholder="enter 12"><br><br>
+                Peak RPM : <input type="text" name="Peak RPM", placeholder="enter 13"><br><br>
+                City mpg : <input type="text" name="City mpg", placeholder="enter 14"><br><br>
+                Highway mpg : <input type="text" name="Highway mpg", placeholder="enter 15"><br><br><br></b>
+                <input type="submit", value="predict">
+            </b>
+        </form>
+</body>
+</html>
